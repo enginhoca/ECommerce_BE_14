@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs/Auth/" />
+    <Folder Include="DTOs/Category/" />
+    <Folder Include="DTOs/Order/" />
+    <Folder Include="DTOs/Product/" />
+    <Folder Include="Exceptions/" />
+    <Folder Include="Interfaces/" />
+    <Folder Include="Mappings/" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <ProjectReference Include="../ECommerce.Domain/ECommerce.Domain.csproj" />
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
+  </ItemGroup>
+
+</Project>

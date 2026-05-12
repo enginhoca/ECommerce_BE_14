@@ -1,0 +1,92 @@
+2026-04-30 19:08:32.436 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 19:08:32.468 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 19:08:33.031 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 19:08:33.032 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 19:08:33.032 +03:00 [INF] Hosting environment: Development
+2026-04-30 19:08:33.032 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 19:08:33.245 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 19:08:51.696 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 19:24:52.347 +03:00 [INF] Application is shutting down...
+2026-04-30 19:26:55.208 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 19:26:55.240 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 19:26:55.680 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 19:26:55.680 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 19:26:55.680 +03:00 [INF] Hosting environment: Development
+2026-04-30 19:26:55.680 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 19:26:55.850 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 19:27:34.864 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 19:35:42.867 +03:00 [INF] Application is shutting down...
+2026-04-30 19:35:57.492 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 19:35:57.525 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 19:35:57.970 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 19:35:57.971 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 19:35:57.971 +03:00 [INF] Hosting environment: Development
+2026-04-30 19:35:57.971 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 19:35:58.200 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 19:36:22.429 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 19:42:11.433 +03:00 [INF] Application is shutting down...
+2026-04-30 19:42:14.127 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 19:42:14.159 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 19:42:14.604 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 19:42:14.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 19:42:14.605 +03:00 [INF] Hosting environment: Development
+2026-04-30 19:42:14.605 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 19:42:14.663 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 19:42:41.698 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:15:54.901 +03:00 [INF] Application is shutting down...
+2026-04-30 20:16:00.468 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:16:00.500 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:16:00.935 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:16:00.936 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:16:00.936 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:16:00.936 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:16:00.970 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:16:13.153 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:18:35.878 +03:00 [INF] Application is shutting down...
+2026-04-30 20:19:10.834 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:19:10.877 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:19:11.392 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:19:11.395 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:19:11.395 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:19:11.395 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:19:11.527 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:19:21.462 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:23:20.004 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:23:20.037 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:23:20.484 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:23:20.484 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:23:20.484 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:23:20.484 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:23:20.702 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:23:27.815 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:27:06.661 +03:00 [INF] Application is shutting down...
+2026-04-30 20:27:12.726 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:27:12.757 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:27:13.195 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:27:13.195 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:27:13.195 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:27:13.196 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:27:13.384 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:27:28.652 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:37:37.674 +03:00 [INF] Application is shutting down...
+2026-04-30 20:38:08.544 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:38:08.576 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:38:09.035 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:38:09.035 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:38:09.035 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:38:09.036 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:38:09.250 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:38:47.056 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:45:21.618 +03:00 [INF] Application is shutting down...
+2026-04-30 20:46:30.765 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-04-30 20:46:30.797 +03:00 [WRN] The foreign key property 'OrderItem.ProductId1' was created in shadow state because a conflicting property with the simple name 'ProductId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-04-30 20:46:31.306 +03:00 [INF] Now listening on: http://localhost:5050
+2026-04-30 20:46:31.306 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 20:46:31.306 +03:00 [INF] Hosting environment: Development
+2026-04-30 20:46:31.306 +03:00 [INF] Content root path: /Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/04-ASP.NET_Core/Week14/30-04-2026/ECommerce/ECommerce.API
+2026-04-30 20:46:31.528 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 20:47:36.491 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-30 20:53:35.784 +03:00 [INF] Dosya yüklenedi: /uploads/products63f88df6-7d7b-466d-ae91-65f1df328af1.jpeg
+2026-04-30 20:54:42.400 +03:00 [INF] Dosya yüklenedi: /uploads/products594d18d3-9108-4243-b6ca-9b4ff9022d28.png
+2026-04-30 20:55:59.989 +03:00 [INF] Dosya yüklenedi: /uploads/products2492c7f3-059c-4b1d-9f58-6187eae360af.png
+2026-04-30 21:01:59.059 +03:00 [INF] Application is shutting down...

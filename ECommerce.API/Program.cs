@@ -61,7 +61,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     };
 });
 
-builder.Services.AddHealthChecks();
+builder.Services.AddHealthChecks().AddDbContextCheck<ECommerceDbContext>();
 
 var app = builder.Build();
 

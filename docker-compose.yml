@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: ecommerce-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ecommerce_db
+      POSTGRES_USER: ecommerce_user
+      POSTGRES_PASSWORD: Ecommerce123!
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U ecommerce_user -d ecommerce_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+  api:
+    build:
+      context: .
+      dockerfile: .dockerfile
+    container_name: ecommerce-api
+    ports:
+      - 8080:10000
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCPRE_URLS: http://+:10000
+      ConnectionStrings__PostgresConnection: "Host=db;Port=5432;Database=ecommerce_db;Username=ecommerce_user;Password=Ecommerce123!"
+      JwtSettings__SecretKey: "5502225179b310819a8a927fa235bbadc74991561e5bb7e54848bcabd97a5d03"
+      JwtSettings__Issuer: ECommerceAPI
+      JwtSettings__Audience: ECommerceClient
+      JwtSettings__ExpirationInMinutes: 60
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

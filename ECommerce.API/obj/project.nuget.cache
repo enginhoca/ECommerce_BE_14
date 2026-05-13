@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qVykbBU+Npc=",
+  "dgSpecHash": "tvywl4JwhHs=",
   "success": true,
-  "projectFilePath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.API/ECommerce.API.csproj",
+  "projectFilePath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.API/ECommerce.API.csproj",
   "expectedPackageFiles": [
     "/Users/enginniyazi/.nuget/packages/automapper/16.1.1/automapper.16.1.1.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
@@ -22,6 +22,7 @@
     "/Users/enginniyazi/.nuget/packages/microsoft.entityframeworkcore.design/10.0.5/microsoft.entityframeworkcore.design.10.0.5.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.5/microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/microsoft.extensions.dependencymodel/10.0.5/microsoft.extensions.dependencymodel.10.0.5.nupkg.sha512",
+    "/Users/enginniyazi/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.entityframeworkcore/10.0.5/microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.10.0.5.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/microsoft.identitymodel.abstractions/8.17.0/microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.17.0/microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
     "/Users/enginniyazi/.nuget/packages/microsoft.identitymodel.logging/8.17.0/microsoft.identitymodel.logging.8.17.0.nupkg.sha512",

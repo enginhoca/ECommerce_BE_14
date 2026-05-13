@@ -509,6 +509,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.IdentityModel.Abstractions/8.17.0": {
         "type": "package",
         "compile": {
@@ -2328,6 +2344,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/10.0.5": {
+      "sha512": "RtNhAwrnZcUZgi3SUMvaDVF405ZtKVR7l/6OHcqFj6JY5nT7QOdBxxULnby9dUQ6Jhnfl7cdDlMjsexfASNyjg==",
+      "type": "package",
+      "path": "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll",
+        "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.xml",
+        "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.10.0.5.nupkg.sha512",
+        "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.nuspec"
+      ]
+    },
     "Microsoft.IdentityModel.Abstractions/8.17.0": {
       "sha512": "6NrxQGcZg6IunkN8K2F0UVMavNpfCjbjjjON7PYcL8FwI8aULKUreiHsRX/yaA8j3XsTJnQKUYpoQk5gBjULZw==",
       "type": "package",
@@ -3067,6 +3099,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.6",
       "Microsoft.AspNetCore.OpenApi >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
+      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore >= 10.0.5",
       "Microsoft.OpenApi >= 2.0.0",
       "Scalar.AspNetCore >= 2.14.0",
       "Serilog.AspNetCore >= 10.0.0",
@@ -3079,11 +3112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.API/ECommerce.API.csproj",
+      "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.API/ECommerce.API.csproj",
       "projectName": "ECommerce.API",
-      "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.API/ECommerce.API.csproj",
+      "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.API/ECommerce.API.csproj",
       "packagesPath": "/Users/enginniyazi/.nuget/packages/",
-      "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.API/obj/",
+      "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/enginniyazi/.nuget/NuGet/NuGet.Config"
@@ -3099,11 +3132,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Application/ECommerce.Application.csproj": {
-              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Application/ECommerce.Application.csproj"
+            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Application/ECommerce.Application.csproj": {
+              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Application/ECommerce.Application.csproj"
             },
-            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
-              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
+            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
+              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
             }
           }
         }
@@ -3135,6 +3168,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[10.0.5, )"
+          },
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": {
             "target": "Package",
             "version": "[10.0.5, )"
           },

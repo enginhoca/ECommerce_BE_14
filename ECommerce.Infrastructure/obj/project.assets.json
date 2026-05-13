@@ -1677,11 +1677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
+      "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
       "projectName": "ECommerce.Infrastructure",
-      "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
+      "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
       "packagesPath": "/Users/enginniyazi/.nuget/packages/",
-      "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Infrastructure/obj/",
+      "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/enginniyazi/.nuget/NuGet/NuGet.Config"
@@ -1697,11 +1697,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Application/ECommerce.Application.csproj": {
-              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Application/ECommerce.Application.csproj"
+            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Application/ECommerce.Application.csproj": {
+              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Application/ECommerce.Application.csproj"
             },
-            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {
-              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj"
+            "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj": {
+              "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj"
             }
           }
         }

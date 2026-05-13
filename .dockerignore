@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/out/
+**/publish/
+**/logs/
+*.logs
+.git
+.gitignore
+**/.vs/
+**/.idea/
+*.user

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {}
+    "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj": {}
   },
   "projects": {
-    "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {
+    "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj",
+        "projectUniqueName": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj",
         "projectName": "ECommerce.Domain",
-        "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj",
+        "projectPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/ECommerce.Domain.csproj",
         "packagesPath": "/Users/enginniyazi/.nuget/packages/",
-        "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/BACKEND-DONEM-14/05-Deployment/Week16/12-05-2026/ECommerce/ECommerce.Domain/obj/",
+        "outputPath": "/Users/enginniyazi/Documents/Old Documents/GitHub/Dersler/ECommerce_BE_14/ECommerce.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/enginniyazi/.nuget/NuGet/NuGet.Config"

@@ -19,13 +19,13 @@ services:
   api:
     build:
       context: .
-      dockerfile: .dockerfile
+      dockerfile: Dockerfile
     container_name: ecommerce-api
     ports:
       - 8080:10000
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCPRE_URLS: http://+:10000
+      ASPNETCORE_URLS: http://+:10000
       ConnectionStrings__PostgresConnection: "Host=db;Port=5432;Database=ecommerce_db;Username=ecommerce_user;Password=Ecommerce123!"
       JwtSettings__SecretKey: "5502225179b310819a8a927fa235bbadc74991561e5bb7e54848bcabd97a5d03"
       JwtSettings__Issuer: ECommerceAPI

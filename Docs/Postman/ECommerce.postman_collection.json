@@ -1,0 +1,240 @@
+{
+  "info": {
+    "name": "ECommerce.API - Complete Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Postman collection generated from provided openapi.json. Uses {{baseUrl}} and {{bearerToken}} environment variables."
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Test\",\n  \"lastName\": \"User\",\n  \"userName\": \"testuser123\",\n  \"email\": \"testuser@example.com\",\n  \"password\": \"P@ssw0rd!\",\n  \"confirmPassword\": \"P@ssw0rd!\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}api/Auth/register",
+              "protocol": "http",
+              "host": ["ecommerce-be-14-ugrt.onrender.com"],
+              "path": ["api", "Auth", "register"]
+            },
+            "description": "Register a new user."
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userNameOrEmail\": \"testuser@example.com\",\n  \"password\": \"P@ssw0rd!\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}api/Auth/login",
+              "protocol": "http",
+              "host": ["ecommerce-be-14-ugrt.onrender.com"],
+              "path": ["api", "Auth", "login"]
+            },
+            "description": "Login. Successful response is expected to include a token in `data.token`, `data.accessToken`, `token`, or `accessToken`. Test script extracts and saves it to environment variable `bearerToken`."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// try to parse response and set bearer token if present",
+                  "var json = {};",
+                  "try { json = pm.response.json(); } catch (e) { json = {}; }",
+                  "var token = (json.data && (json.data.token || json.data.accessToken)) || json.token || json.accessToken || '';",
+                  "if (token) { pm.environment.set('bearerToken', token); pm.test('Saved bearerToken to environment', function(){ pm.expect(token).to.not.be.empty; }); } else { pm.test('No token found in response', function(){ pm.expect(token).to.not.be.empty; }); }"
+                ]
+              }
+            }
+          ],
+          "response": []
+        },
+        {
+          "name": "Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{bearerToken}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}api/Auth/profile",
+              "protocol": "http",
+              "host": ["ecommerce-be-14-ugrt.onrender.com"],
+              "path": ["api", "Auth", "profile"]
+            },
+            "description": "Get profile of authenticated user. Make sure `bearerToken` is set (from Login)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get All Categories",
+          "request": { "method": "GET", "url": { "raw": "{{baseUrl}}api/Categories", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Categories"] }, "header": [{ "key": "Content-Type", "value": "application/json" }] },
+          "response": []
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{bearerToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"New Category\",\n  \"description\": \"A sample category\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Categories", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Categories"] }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category By Id",
+          "request": { "method": "GET", "url": { "raw": "{{baseUrl}}api/Categories/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Categories",":id"], "variable": [{ "key": "id", "value": "1" }] }, "header": [{ "key": "Content-Type", "value": "application/json" }] },
+          "response": []
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{bearerToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Category\",\n  \"description\": \"Updated description\",\n  \"isActive\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Categories/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Categories",":id"], "variable": [{ "key": "id", "value": "1" }] }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [ { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "url": { "raw": "{{baseUrl}}api/Categories/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Categories",":id"], "variable": [{ "key": "id", "value": "1" }] }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"shippingAddress\": \"123 Main St, City\",\n  \"items\": [ { \"productId\": 1, \"quantity\": 2 } ]\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Orders", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Orders"] }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Orders (paged)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{bearerToken}}" }],
+            "url": { "raw": "{{baseUrl}}api/Orders?PageNumber=1&PageSize=10", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Orders"], "query": [{ "key": "PageNumber", "value": "1" }, { "key": "PageSize", "value": "10" }] }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order By Id",
+          "request": { "method": "GET", "header": [{ "key": "Content-Type", "value": "application/json" }], "url": { "raw": "{{baseUrl}}api/Orders/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Orders",":id"], "variable": [{ "key": "id", "value": "1" }] } },
+          "response": []
+        },
+        {
+          "name": "Get My Orders",
+          "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{bearerToken}}" }], "url": { "raw": "{{baseUrl}}api/Orders/my", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Orders","my"] } },
+          "response": []
+        },
+        {
+          "name": "Update Order Status",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": 1\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Orders/:id/status", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Orders",":id","status"], "variable": [{ "key": "id", "value": "1" }] }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get Products (filters)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}api/Products?SearchTerm=&CategoryId=&MinPrice=&MaxPrice=&SortBy=&SortDescending=false&IsActive=true&IgnoreIsDeleted=true&PageNumber=1&PageSize=10", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Products"], "query": [ { "key": "SearchTerm", "value": "" }, { "key": "CategoryId", "value": "" }, { "key": "MinPrice", "value": "" }, { "key": "MaxPrice", "value": "" }, { "key": "SortBy", "value": "" }, { "key": "SortDescending", "value": "false" }, { "key": "IsActive", "value": "true" }, { "key": "IgnoreIsDeleted", "value": "true" }, { "key": "PageNumber", "value": "1" }, { "key": "PageSize", "value": "10" } ] }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Sample Product\",\n  \"description\": \"Sample product description\",\n  \"price\": 19.99,\n  \"stock\": 100,\n  \"categoryId\": 1\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Products", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Products"] }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product By Id",
+          "request": { "method": "GET", "header": [{ "key": "Content-Type", "value": "application/json" }], "url": { "raw": "{{baseUrl}}api/Products/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Products",":id"], "variable": [{ "key": "id", "value": "1" }] } },
+          "response": []
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Product\",\n  \"description\": \"Updated description\",\n  \"price\": 29.99,\n  \"stock\": 50,\n  \"categoryId\": 1,\n  \"isActive\": true,\n  \"isDeleted\": false\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}api/Products/:id", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Products",":id"], "variable": [{ "key": "id", "value": "1" }] }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{bearerToken}}" }], "url": { "raw": "{{baseUrl}}api/Products/:id", "variable": [{ "key": "id", "value": "1" }] } },
+          "response": []
+        },
+        {
+          "name": "Upload Product Image",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Authorization", "value": "Bearer {{bearerToken}}" } ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "image", "type": "file", "src": "" }
+              ]
+            },
+            "url": { "raw": "{{baseUrl}}api/Products/:id/image", "protocol": "http", "host": ["ecommerce-be-14-ugrt.onrender.com"], "path": ["api","Products",":id","image"], "variable": [{ "key": "id", "value": "1" }] },
+            "description": "Upload image file. Select a file in Postman when sending this request. Field name is `image`."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

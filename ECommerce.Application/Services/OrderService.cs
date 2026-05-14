@@ -89,7 +89,7 @@ public class OrderService : IOrderService
 
     public async Task<Result<PagedResponseDto<OrderDto>>> GetAllOrdersAsync(PaginationDto pagination, CancellationToken cancellationToken)
     {
-        var allOrders = await _uow.Orders.GetAllAsync(cancellationToken);
+        var allOrders = await _uow.Orders.GetOrdersWithItemsAsync(cancellationToken);
         var totalCount = allOrders.Count();
 
         var items = allOrders

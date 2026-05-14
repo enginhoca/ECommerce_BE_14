@@ -44,4 +44,16 @@ public class OrderRepository : Repository<Order>, IOrderRepository
                         .AsSplitQuery()
             .FirstOrDefaultAsync(cancellationToken);
     }
+
+    public async Task<IEnumerable<Order>> GetOrdersWithItemsAsync(CancellationToken cancellationToken=default)
+    {
+        return await _dbSet
+            .AsNoTracking()
+            .Include(o=>o.OrderItems)
+                .ThenInclude(oi=>oi.Product)
+                    .ThenInclude(p=>p!.Category)
+                        .AsSplitQuery()
+            .ToListAsync(cancellationToken);
+    }
+
 }
